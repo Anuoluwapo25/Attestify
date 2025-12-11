@@ -22,7 +22,6 @@ export default function VerificationModal({ isOpen, onClose, onVerified }: Verif
   const [selfApp, setSelfApp] = useState<any | null>(null);
   const [universalLink, setUniversalLink] = useState('');
   const [, setVerificationMethod] = useState<'desktop' | 'mobile'>('desktop');
-  const [, _setVerificationProof] = useState<string>('');
 
   // Contract write for submitting proof
   const { writeContract, data: txHash, error: writeError } = useWriteContract();

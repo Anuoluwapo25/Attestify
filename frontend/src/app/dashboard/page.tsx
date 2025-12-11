@@ -197,10 +197,10 @@ export default function Dashboard() {
     args: [2],
   });
 
-  const { writeContract: writeApproval, data: approvalHash, error: _approvalError } = useWriteContract();
+  const { writeContract: writeApproval, data: approvalHash } = useWriteContract();
   const { writeContract: writeDeposit, data: depositHash, error: depositError } = useWriteContract();
-  const { writeContract: writeWithdraw, data: withdrawHash, error: _withdrawError } = useWriteContract();
-  const { writeContract: writeStrategyChange, data: strategyHash, error: _strategyError } = useWriteContract();
+  const { writeContract: writeWithdraw, data: withdrawHash } = useWriteContract();
+  const { writeContract: writeStrategyChange, data: strategyHash } = useWriteContract();
 
   // Wait for approval transaction
   const { isSuccess: isApprovalSuccess } = useWaitForTransactionReceipt({
