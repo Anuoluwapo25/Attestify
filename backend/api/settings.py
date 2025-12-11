@@ -165,6 +165,8 @@ CORS_ALLOW_HEADERS = [
     'x-wallet-address',  
 ]
 
+APPEND_SLASH = True
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
